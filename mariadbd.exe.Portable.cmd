@@ -3,7 +3,7 @@ REM --no-defaults
 cd %~dp0
 set DATA_FOLDER=data
 
-if exit %DATA_FOLDER% (
+if exist %DATA_FOLDER% (
   rmdir /S /Q %DATA_FOLDER%
 )
 
